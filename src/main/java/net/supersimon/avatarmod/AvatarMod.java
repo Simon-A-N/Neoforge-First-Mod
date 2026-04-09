@@ -1,5 +1,7 @@
 package net.supersimon.avatarmod;
 
+import net.supersimon.avatarmod.block.ModBlocks;
+import net.supersimon.avatarmod.item.ModCreativeModeTabs;
 import net.supersimon.avatarmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -56,8 +58,10 @@ public class AvatarMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -83,6 +87,11 @@ public class AvatarMod {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.BISMUTH);
             event.accept(ModItems.RAW_BISMUTH);
+        }
+
+        if (event.getTabKey() ==CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.BISMUTH_BLOCK);
+            event.accept(ModBlocks.BISMUTH_ORE);
         }
     }
 

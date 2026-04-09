@@ -1,4 +1,12 @@
 {
   "item.avamod.bismuth": "Bismuth",
-  "item.avamod.raw_bismuth": "Raw Bismuth"
+  "item.avamod.raw_bismuth": "Raw Bismuth",
+
+  "block.avamod.bismuth_block": "Block of Bismuth",
+  "block.avamod.bismuth_ore": "Bismuth Ore",
+
+  "creativetab.avamod.avatar_items": "Avatar Items",
+  "creativetab.avamod.avatar_blocks": "Avatar Blocks"
+
+
 }
