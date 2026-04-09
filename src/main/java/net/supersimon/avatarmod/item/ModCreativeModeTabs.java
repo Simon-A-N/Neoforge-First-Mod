@@ -17,23 +17,23 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, AvatarMod.MODID);
 
     public static final Supplier<CreativeModeTab> AVATAR_ITEMS_TAB = CREATIVE_MODE_TAB.register("avatar_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BISMUTH.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.JADE.get()))
                     .title(Component.translatable("creativetab.avamod.avatar_items"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.BISMUTH);
-                        output.accept(ModItems.RAW_BISMUTH);
+                        output.accept(ModItems.JADE);
+                        output.accept(ModItems.UNREFINED_JADE);
 
 
                     }).build());
 
     public static final Supplier<CreativeModeTab> AVATAR_BLOCKS_TAB = CREATIVE_MODE_TAB.register("avatar_blocks_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BISMUTH_BLOCK.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.JADE_BLOCK.get()))
                     //Next line is what allows multiple tabs
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(AvatarMod.MODID, "avatar_items_tab"))
                     .title(Component.translatable("creativetab.avamod.avatar_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModBlocks.BISMUTH_BLOCK);
-
+                        output.accept(ModBlocks.JADE_BLOCK);
+                        output.accept(ModBlocks.JADE_ORE);
 
                     }).build());
 

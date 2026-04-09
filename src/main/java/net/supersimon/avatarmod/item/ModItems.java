@@ -10,9 +10,9 @@ import net.supersimon.avatarmod.AvatarMod;
 public class ModItems {
     public static final DeferredRegister.Items Items = DeferredRegister.createItems(AvatarMod.MODID);
 // green strings like "bismuth" must ve lowercase and <Item> things must be uppercase
-    public static final DeferredItem<Item> BISMUTH = Items.register("bismuth",
+    public static final DeferredItem<Item> JADE = Items.register("jade",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> RAW_BISMUTH = Items.register( "raw_bismuth",
+    public static final DeferredItem<Item> UNREFINED_JADE = Items.register( "unrefined_jade",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

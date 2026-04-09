@@ -85,13 +85,13 @@ public class AvatarMod {
     // Add the example ingredient item to the Ingredients tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.BISMUTH);
-            event.accept(ModItems.RAW_BISMUTH);
+            event.accept(ModItems.JADE);
+            event.accept(ModItems.UNREFINED_JADE);
         }
 
         if (event.getTabKey() ==CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.BISMUTH_BLOCK);
-            event.accept(ModBlocks.BISMUTH_ORE);
+            event.accept(ModBlocks.JADE_BLOCK);
+            event.accept(ModBlocks.JADE_ORE);
         }
     }
 

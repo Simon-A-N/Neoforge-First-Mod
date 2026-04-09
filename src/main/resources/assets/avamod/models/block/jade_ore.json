@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "avamod:block/bismuth_ore"
+    "all": "avamod:block/jade_ore"
   }
 }

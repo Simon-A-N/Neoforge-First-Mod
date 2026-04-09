@@ -21,11 +21,11 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(AvatarMod.MODID);
 
-    public static final DeferredBlock<Block> BISMUTH_BLOCK = registerBlock("bismuth_block",
+    public static final DeferredBlock<Block> JADE_BLOCK = registerBlock("jade_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
-    public static final DeferredBlock<Block> BISMUTH_ORE =registerBlock("bismuth_ore",
+    public static final DeferredBlock<Block> JADE_ORE =registerBlock("jade_ore",
             () -> new DropExperienceBlock(UniformInt.of(4, 6),
                     BlockBehaviour.Properties.of()
                             .strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));

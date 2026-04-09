@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "avamod:item/raw_bismuth"
+    "layer0": "avamod:item/unrefined_jade"
   }
 }
